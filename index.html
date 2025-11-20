@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian Burgoin Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+     <!--div id="preloader">
+        <div class="spinner"></div>
+        <span class="preloader-text">Loading...</span>
+    </div-->
+    <header>
+        <!-- Nav Bar -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#" class="logo">Cristian Burgoin</a>
+                <a href="#" id="header-resume">Resume</a>
+            </div>
+            <div class="nav-center">
+                <a href="#about-section" id="about-link">About Me</a>
+                <a href="#projects-section" id="projects-link">Projects</a>
+                <a href="#experience-section" id="experience-link">Experience</a>
+                <a href="#skills-section" id="skills-link">Skills</a>
+                <a href="#contact-section" id="contact-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <button id="cursor-toggle" aria-label="Toggle cursor particles">
+                    <i class="fa-solid fa-mouse-pointer"></i>
+                </button>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <div class="lang-toggle">
+                    <input type="checkbox" id="lang-switch">
+                    <label for="lang-switch" class="switch"></label>
+                    <div class="lang-labels">
+                        <span>EN</span>
+                        <span class="lang-option">ES</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <nav class="sidebar">
+            <button class="close-sidebar" aria-label="Close menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <a href="#about-section" id="about-sidebar-link" class="sidebar-link">About Me</a>
+            <a href="#projects-section" id="projects-sidebar-link" class="sidebar-link">Projects</a>
+            <a href="#experience-section" id="experience-sidebar-link" class="sidebar-link">Experience</a>
+            <a href="#skills-section" id="skills-sidebar-link" class="sidebar-link">Skills</a>
+            <a href="#contact-section" id="contact-sidebar-link" class="sidebar-link">Contact</a>
+            <a href="#" id="sidebar-resume" class="sidebar-link">Resume</a>
+
+            <div class="sidebar-controls">
+                <button id="cursor-toggle-sidebar" aria-label="Toggle cursor particles">
+                    <i class="fa-solid fa-mouse-pointer"></i>
+                </button>
+                <button id="theme-toggle-sidebar" aria-label="Toggle theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <div class="lang-toggle">
+                    <input type="checkbox" id="lang-switch-sidebar">
+                    <label for="lang-switch-sidebar" class="switch"></label>
+                    <div class="lang-labels">
+                        <span>EN</span>
+                        <span class="lang-option">ES</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 id="hero-title">Cristian Burgoin</h1>
+                    <h2 id="hero-subtitle">Software Engineer</h2>
+                    <div class="hero-links">
+                        <a href="https://github.com/cburgoin-dev" class="hero-link" target="_blank">
+                            <i class="fa-brands fa-github"></i> <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/cristian-saúl-burgoin-monteverde-49a5a3382" class="hero-link" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span>
+                        </a>
+                        <a href="#" id="hero-resume" class="hero-link">
+                            <i class="fa-solid fa-file"></i> <span>Resume</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/avatar-example.jpg" alt="Cristian Burgoin portrait">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about" id="about-section">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/avatar-example3.png" alt="Cristian Burgoin">
+                </div>
+                <div class="about-text">
+                    <h2 id="about-title">About Me</h2>
+                    <p id="about-first-paragraph">The first time I used a computer, I was 4 years old, and since then I haven't been able to step away from technology. I am currently in the final stage of my degree: Software Development Engineering.</p>
+                    <p id="about-second-paragraph">During my studies, I gained knowledge that allowed me to establish myself as a Fullstack developer with a Backend focus. I prioritize code efficiency and maintainability, have worked with multiple languages and technologies, and my goal is to build clear solutions that solve real problems.</p>
+                    <h2 id="about-phrase"><em>Building digital solutions, one line at a time</em></h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects-section">
+            <h2 id="projects-title">Projects</h2>
+
+            <div class="projects-container">
+
+                <!-- Project 1 -->
+                 <div class="project">
+                    <div class="project-gallery">
+                        <button class="gallery-btn prev">&#10094;</button>
+                        <div class="gallery-track">
+                            <img src="images/project1-img1.png" alt="Project 1 image 1">
+                            <img src="images/project1-img2.png" alt="Project 1 image 2">
+                            <img src="images/project1-img3.png" alt="Project 1 image 3">
+                        </div>
+                        <button class="gallery-btn next">&#10095;</button>
+                        <div class="gallery-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <h3 data-i18n="projects.project1.title" class="project-title">Hotel Booking System</h3>
+                        <p data-i18n="projects.project1.desc" class="project-description">A backend reservation system built with Java, MySQL, and REST architecture, implementing real booking rules such as date validation, room availability, synchronized room status updates, price calculation, and full booking lifecycle management. Designed with a clean Controller–Service–DAO structure and secured with JWT and role-based access.</p>
+                        <div class="project-tech">
+                            <span><img src="images/tech-icons/Java.svg" alt=""> Java</span>
+                            <span><img src="images/tech-icons/MySQL.svg" alt=""> MySQL</span>
+                            <span><img src="images/tech-icons/API.svg" class="api-icon" alt=""> REST API</span>
+                            <span><img src="images/tech-icons/JWT.svg" alt=""> JWT</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <button id="live-demo-button" class="project-btn disabled-btn" disabled>In Development</button>
+                            <a href="https://github.com/cburgoin-dev/hotel-booking" class="project-btn github-btn" target="_blank">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                 </div>
+
+                 <!-- Project 2-->
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience" id="experience-section">
+            <h2 id="experience-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-i18n="experience.uabcs.title">UABCS - Software Development Engineering</h3>
+                            <span data-i18n="experience.uabcs.tag" class="tag">Bachelor's Degree</span>
+                        </div>
+                        <span data-i18n= "experience.uabcs.date" class="timeline-date">Aug 2023 - Present</span>
+                        <p data-i18n="experience.uabcs.desc">Currently in the 5th semester of the Software Development Engineering degree. Experience with Java, Python, MySQL, backend architecture, APIs, and full-stack projects. Focused on clean code, maintainable systems, and problem-solving through algorithms and data structures.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-i18n="experience.independent.title">Independent Projects & Learning</h3>
+                            <span data-i18n="experience.independent.tag" class="tag">Self-Taught</span>
+                        </div>
+                        <span data-i18n="experience.independent.date" class="timeline-date">May 2022 - Present</span>
+                        <p data-i18n="experience.independent.desc">Started learning programming independently through Unity and personal projects. This early interest grew into consistent practice and self-driven learning, especially in OOP and building small software prototypes.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-i18n="experience.cbtis.title">CBTIS 230 - Programming Technician</h3>
+                            <span data-i18n="experience.cbtis.tag" class="tag">Foundations</span>
+                        </div>
+                        <span data-i18n="experience.cbtis.date" class="timeline-date">Aug 2016 - June 2019</span>
+                        <p data-i18n="experience.cbtis.desc">Graduated as a Programming Technician, where I learned the fundamentals of sotfware development, algorithms, data structures, and logic-based problem solving.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills-section">
+            <h2 id="skills-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="icon-wrapper">
+                        <img src="images/tech-icons/HTML5-white.svg" class="icon white" alt="HTML5 white icon">
+                    <img src="images/tech-icons/HTML5.svg" class="icon color" alt="HTML5 colored icon">
+                    </div>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-wrapper">
+                        <img src="images/tech-icons/CSS3-white.svg" class="icon white" alt="HTML5 white icon">
+                    <img src="images/tech-icons/CSS3.svg" class="icon color" alt="HTML5 colored icon">
+                    </div>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-wrapper">
+                        <img src="images/tech-icons/JavaScript-white.svg" class="icon white" alt="HTML5 white icon">
+                    <img src="images/tech-icons/JavaScript.svg" class="icon color" alt="HTML5 colored icon">
+                    </div>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-wrapper">
+                        <img src="images/tech-icons/Java-white.svg" class="icon white" alt="HTML5 white icon">
+                    <img src="images/tech-icons/Java.svg" class="icon color" alt="HTML5 colored icon">
+                    </div>
+                    <span>Java</span>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-wrapper">
+                        <img src="images/tech-icons/Python-white.svg" class="icon white" alt="HTML5 white icon">
+                    <img src="images/tech-icons/Python.svg" class="icon color" alt="HTML5 colored icon">
+                    </div>
+                    <span>Python</span>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-wrapper">
+                        <img src="images/tech-icons/MySQL-white.svg" class="icon white" alt="HTML5 white icon">
+                    <img src="images/tech-icons/MySQL.svg" class="icon color" alt="HTML5 colored icon">
+                    </div>
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-wrapper">
+                        <img src="images/tech-icons/Git-white.svg" class="icon white" alt="HTML5 white icon">
+                    <img src="images/tech-icons/Git.svg" class="icon color" alt="HTML5 colored icon">
+                    </div>
+                    <span>Git</span>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-wrapper">
+                        <img src="images/tech-icons/Postman-white.svg" class="icon white" alt="HTML5 white icon">
+                    <img src="images/tech-icons/Postman.svg" class="icon color" alt="HTML5 colored icon">
+                    </div>
+                    <span>Postman</span>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-wrapper">
+                        <img src="images/tech-icons/Linux-white.svg" class="icon white" alt="HTML5 white icon">
+                    <img src="images/tech-icons/Linux.svg" class="icon color" alt="HTML5 colored icon">
+                    </div>
+                    <span>Linux</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact-section">
+            <div class="contact-content">
+                <h2 id="contact-title">Contact</h2>
+                <p id="contact-phrase">Like what you see? Get in touch!</p>
+                <div id="contact-msg" class="contact-msg"></div>
+                <form id="contact-form" action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label id="form-name" for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label id="form-email" for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label id="form-subject" for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label id="form-message" for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" id="form-submit" class="submit-btn">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <div class="toast-container"></div>
+    <footer id="footer">
+        <div class="footer-content">
+            <span id="footer-text"></span>
+
+            <div class="footer-links">
+                <a href="https://github.com/cburgoin-dev" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/cristian-saúl-burgoin-monteverde-49a5a3382" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init('nMXvsnrcHnOuHpBzo');
+        })();
+    </script>
+</body>
+</html>
