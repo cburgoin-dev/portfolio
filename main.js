@@ -366,6 +366,24 @@ sidebarLinks.forEach(link => {
     })
 })
 
+// Preloader
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    const body = document.body;
+
+    body.style.visibility = 'visible';
+    setTimeout(() => {
+        preloader.classList.add('hidden');
+    }, 2000);
+});
+
+function updatePreloaderText(lang) {
+    const preloaderText = document.querySelector('.preloader-text');
+    if (!preloaderText) return;
+
+    preloaderText.textContent = lang === 'es' ? 'Cargando...' : 'Loading...';
+}
+
 // Load DOM content
 document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme') || 'light';
@@ -386,12 +404,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setLangSwitches(savedLang);
     setLanguage(savedLang);
     updateLangColor(savedLang);
+    updatePreloaderText(savedLang);
 
     requestAnimationFrame(() => {
         document.querySelector('.lang-toggle').classList.remove('no-transition');
     });
-
-    document.body.style.visibility = 'visible';
 });
 
 // Projects gallery logic
