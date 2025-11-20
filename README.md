@@ -36,7 +36,7 @@ It is used in my job applications and as a long-term personal website.
 # 🔗 Live Version
 
 Hosted on GitHub Pages  
-Link goes here once deployed
+https://cburgoin-dev.github.io/portfolio
 
 # 📬 Contact
 **Email:** cristian.burgoin.dev@gmail.com  
