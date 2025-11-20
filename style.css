@@ -62,7 +62,7 @@ section {
 }
 
 .spinner {
-    border: 5px solid #fff;
+    border: 5px solid var(--text-color);
     border-top: 5px solid var(--acent-color);
     border-radius: 50%;
     width: 50px;
