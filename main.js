@@ -181,7 +181,7 @@ const translations = {
                 title: 'UABCS - Software Development Engineering',
                 tag: `Bachelor's Degree`,
                 date: 'Aug 2023 - Present',
-                desc: 'Currently in the 5th semester of the Software Development Engineering degree. Experience with Java, Python, MySQL, backend architecture, APIs, and full-stack projects. Focused on clean code, maintainable systems, and problem-solving through algorithms and data structures.'
+                desc: 'Currently in the 6th semester of the Software Development Engineering degree. Experience with Java, Python, MySQL, backend architecture, APIs, and full-stack projects. Focused on clean code, maintainable systems, and problem-solving through algorithms and data structures.'
             },
             independent: {
                 title: 'Independent Projects & Learning',
@@ -234,7 +234,7 @@ const translations = {
                 title: 'UABCS - Ingeniería en Desarrollo de Software',
                 tag: `Licenciatura`,
                 date: 'Ago 2023 - Presente',
-                desc: 'Actualmente en el 5to semestre de la carrera de Ingeniería en Desarrollo de Software. Experiencia con Java, Python, MySQL, arquitectura backend, APIs y proyectos full-stack. Enfocado en código limpio, sistemas mantenibles y resolución de problemas mediante algoritmos y estructuras de datos.'
+                desc: 'Actualmente en el 6to semestre de la carrera de Ingeniería en Desarrollo de Software. Experiencia con Java, Python, MySQL, arquitectura backend, APIs y proyectos full-stack. Enfocado en código limpio, sistemas mantenibles y resolución de problemas mediante algoritmos y estructuras de datos.'
             },
             independent: {
                 title: 'Proyectos y Aprendizaje Independiente',
